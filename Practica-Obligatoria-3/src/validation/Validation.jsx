@@ -2,26 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types';
 
 const Validation = ({ esValido, messege }) => {
-    const colorParrafoVerde = {
-        color: 'green'
-      };
-      const colorParrafoRojo = {
-        color: 'red'
-      };
-
     if (esValido) {     
-        return (
-          <div>
-              <p style={colorParrafoVerde}>{messege}</p>
-          </div>
-        )
+        return alert(messege)
     }
     if (!esValido && tieneLetraO){
-        return (
-            <div>
-                <p style={colorParrafoRojo}>{messege}</p>
-            </div>
-          )
+        return   
     }
 }
 
